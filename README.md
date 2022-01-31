@@ -1,6 +1,7 @@
 # OteoServices-ControlWorkStations
 
 Simple java app to control your LAN computers in remote.
+
 You need to config your "ConfigWS.txt" file with the params you need (See example).
 
 To WakeUp the computer you will need to configure it to be able to WOL (Wake On Lan) with ethernet adapter.
