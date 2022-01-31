@@ -6,10 +6,10 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import com.OteoServices.OteoServices_ControlWorkStations.Interfaces.IFileServiceable;
-import com.OteoServices.OteoServices_ControlWorkStations.Interfaces.IWSServiceable;
+import com.OteoServices.OteoServices_ControlWorkStations.Interfaces.IWorkStationServiceable;
 import com.OteoServices.OteoServices_ControlWorkStations.Models.WorkStation;
 
-public class WorkStationService implements IWSServiceable{
+public class WorkStationService implements IWorkStationServiceable{
 	
 	private static IFileServiceable FILE_SERVICE = new FileService();
 	
@@ -45,6 +45,7 @@ public class WorkStationService implements IWSServiceable{
 			int ws_number = i+1;
 
 			WorkStation ws = new WorkStation();
+			ws.setPrivate_identify_number(ws_number);
 			ws.setLabel_text(FILE_SERVICE.readConfigFileParameter("LABEL_WS_" + ws_number));
 			ws.setName(FILE_SERVICE.readConfigFileParameter("NAME_WS_" + ws_number));
 			ws.setSubnet_mask(FILE_SERVICE.readConfigFileParameter("SUBNET_MASK_WS_" + ws_number));

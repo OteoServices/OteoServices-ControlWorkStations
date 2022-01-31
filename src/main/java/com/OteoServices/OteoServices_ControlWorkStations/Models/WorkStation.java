@@ -11,6 +11,8 @@ public class WorkStation implements IWorkStationActionable {
 	public static final int REBOOT_OPT = 3;
 	public static final int SHUTDOWN_OPT = 4;
 	
+	private int private_identify_number;
+	
 	private String label_text;
 	private String name;
 	private String subnet_mask;
@@ -20,6 +22,8 @@ public class WorkStation implements IWorkStationActionable {
 	private String port_wakeup;
 	
 	public WorkStation() {
+		this.private_identify_number = -1;
+		
 		this.label_text = "";
 		this.name = "";
 		this.subnet_mask = "";
@@ -29,8 +33,9 @@ public class WorkStation implements IWorkStationActionable {
 		this.port_wakeup = "";		
 	}
 	
-	public WorkStation(String label_text, String name, String subnet_mask, String user, String pwd, 
+	public WorkStation(int private_identify_number, String label_text, String name, String subnet_mask, String user, String pwd, 
 			String mac_address, String port_wakeup) {
+		this.private_identify_number = private_identify_number;
 		this.label_text = label_text;
 		this.name = name;
 		this.subnet_mask = subnet_mask;
@@ -96,6 +101,14 @@ public class WorkStation implements IWorkStationActionable {
 
 	public void setPort_wakeup(String port_wakeup) {
 		this.port_wakeup = port_wakeup;
+	}
+	
+	public int getPrivate_identify_number() {
+		return private_identify_number;
+	}
+
+	public void setPrivate_identify_number(int private_identify_number) {
+		this.private_identify_number = private_identify_number;
 	}
 
 	// FIN GETTERS & SETTERS
@@ -208,4 +221,8 @@ public class WorkStation implements IWorkStationActionable {
 	}
 
 	// FIN IWorkStationActionable
+	
+	public String toString() {
+		return this.label_text;
+	}
 }

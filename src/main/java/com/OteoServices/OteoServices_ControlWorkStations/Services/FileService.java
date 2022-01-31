@@ -18,7 +18,7 @@ public class FileService implements IFileServiceable{
 
 		try {
 			String path_prod = System.getProperty("user.dir") + "\\ConfigWs.txt";
-			String path_test = "..\\OteoServices-ControlWorkStations\\src\\mock\\ConfigWs.txt"; // Used for test
+			//String path_test = "..\\OteoServices-ControlWorkStations\\src\\mock\\ConfigWs.txt"; // Used for test
 			
 			FileReader fr = new FileReader(path_prod);
 			BufferedReader br = new BufferedReader(fr);
