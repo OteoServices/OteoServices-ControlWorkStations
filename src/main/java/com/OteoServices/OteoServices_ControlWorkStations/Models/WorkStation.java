@@ -144,6 +144,7 @@ public class WorkStation implements IWorkStationActionable {
 		System.out.println("WorkStation.class --> createIActionableCommand()");
 		
 		StringBuilder command = new StringBuilder();
+		//command.append(Bat.WS_BATS_PATH_TEST);
 		command.append(Bat.WS_BATS_PATH_PROD);
 		command.append(batName);
 		command.append(params.toString());
