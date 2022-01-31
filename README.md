@@ -1,6 +1,6 @@
 # OteoServices-ControlWorkStations
 
-Simple java app to control your LAN computers in remote.
+Simple java app to control your LAN computers in remote for windows.
 
 At first you need to config your "ConfigWS.txt" file with the params you need (See example).
 
