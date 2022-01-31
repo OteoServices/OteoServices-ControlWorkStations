@@ -1,0 +1,23 @@
+# WorkStations params
+# WakeUpPort should be 7 (default) if it not configured in WorkStation ethernet adapter
+#
+TOTAL_WS_COUNT='2'
+#
+# SERVER 1
+LABEL_WS_1='TextToShowInTheApp'
+NAME_WS_1='WorkStationIp'
+USER_WS_1='wsUser'
+PWD_WS_1='wsUserPwd'
+MAC_WS_1='wsMacAddress'
+PORT_WAKEUP_WS_1='wsWakeUpPort'
+SUBNET_MASK_WS_1='wsSubnetMask'
+#
+#
+# SERVER 2
+LABEL_WS_2='wsLabelApp'
+NAME_WS_2='wsName'
+USER_WS_2='wsUser'
+PWD_WS_2='wsUserPwd'
+MAC_WS_2='wsMacAddress'
+PORT_WAKEUP_WS_2='wsWakeUpPort'
+SUBNET_MASK_WS_2='wsSubnetMask'
